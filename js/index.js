@@ -79,3 +79,31 @@ let numberOfWords= numberOfSpaces+1;
 console.log(numberOfWords);
 
 
+let sentence = "Amor, Roma";
+
+let sentenceLower = sentence.toLowerCase();
+
+let ArraySentence =[... sentenceLower];
+
+console.log(ArraySentence);
+
+let stringRaw = ""; 
+
+let stringRawReverse = "";
+
+ArraySentence.forEach(letter => {
+    if (!/[^a-zA-Z]/.test(letter)) { 
+        stringRaw = stringRaw + letter;
+        stringRawReverse=letter+stringRawReverse; 
+
+    }
+}); 
+
+console.log(stringRaw);
+console.log(stringRawReverse);
+
+if(stringRaw===stringRawReverse){console.log(`The string: ${sentence} is a polindrom`);}
+else{console.log(`The string: ${sentence} is not a polindrom`); }
+
+
+
