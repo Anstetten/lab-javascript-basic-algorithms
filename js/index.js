@@ -25,3 +25,48 @@ else{
 
 
 // Iteration 3: Loops
+
+let hacker1New = "";
+
+
+for (let i=0; i < hacker1.length; i++){
+hacker1New= hacker1New + hacker1[i].toUpperCase() + " "; 
+} 
+hacker1New= hacker1New.slice(0,hacker1New.length-1);
+
+console.log(hacker1New);
+
+let hacker2New = "";
+for (let i=hacker2.length -1; i>=0; i--){
+    hacker2New = hacker2New + hacker2[i];
+}
+console.log(hacker2New);
+
+
+console.log(hacker1[0] > hacker2);
+
+
+
+let ShorterLenght = (hacker1.length <= hacker2.length) ? hacker1.length : hacker2.length;
+console.log(ShorterLenght);
+
+for (let i=0; i<ShorterLenght; i++){
+    if (hacker1[i]<hacker2[i]) {
+        console.log("the driver goes first"); break;
+    }
+     else if (hacker1[i]>hacker2[i])
+     { console.log("the navigator goes first"); break;}
+    
+     
+     else{
+
+        if (i==ShorterLenght-1){
+            console.log("What?! You both have the same name?");
+        }
+
+     }
+     
+     
+
+    
+}
