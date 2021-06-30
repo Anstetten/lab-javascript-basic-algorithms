@@ -1,4 +1,3 @@
-
 // Iteration 1: Names and Input
 
 let hacker1 = "Amanda";
@@ -122,7 +121,7 @@ let stringRawReverse = "";
 //For each member of the array we decide if it is a letter or other character
 //If letter we add it to the end of the normal stringRaw and to the beiginning of the reverse one
 ArraySentence.forEach(letter => {
-    if (!/[^a-zA-Z]/.test(letter)) { 
+    if (/[a-zA-Z]/.test(letter)) { 
         stringRaw = stringRaw + letter;
         stringRawReverse=letter+stringRawReverse; 
 
@@ -137,6 +136,3 @@ if(stringRaw===stringRawReverse){
     console.log(`The string: '${sentence}' is a polindrom`);}
 else{
     console.log(`The string: '${sentence}' is not a polindrom`); }
-
-
-
