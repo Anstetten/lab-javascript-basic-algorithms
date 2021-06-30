@@ -21,7 +21,6 @@ else{
     console.log("Wow, you both have equally long names, XX characters!");
 }
 
-
-
-
 // Iteration 3: Loops
+
+console.log(hacker1[3]);
